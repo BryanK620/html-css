@@ -1,6 +1,6 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
 
-pre > section > p{
+section {
     white-space: pre-line;
 }
