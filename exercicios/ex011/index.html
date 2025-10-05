@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="Imagem flexível">
+    </picture>
+    <br> Para ter uma imagem flexível é necessário utilizar a tag source media type, mudando o min para max, colocando sempre 50 px a cima do que tamanho da imagem utilizada. <br>
+    Começar pela imagem maior é depois colocar a menor, para acrescentar a menor tem que ser a cima da maior que foi adicionada primeiro.
+    <p>Imagem 300x300 para celular
+        700x700 para tablet
+        1000x1000 para pc
+    </p>
+    <h1>Reproduzindo áudio</h1>
+    <audio src="midia/Luísa Sonza, Baco Exu do Blues - Surreal (Áudio Oficial).mp3" controls autoplay></audio>
+
+    <!--Formatos compatíveis para músicas e áudios: MP3, WAV e OGG-->
+    <audio >
+       <source src="midia/Luísa Sonza, Baco Exu do Blues - Surreal (Áudio Oficial).mp3" type="audio/mpeg"> 
+    </audio>
+
+    <h1>Vídeos com HTML5</h1>
+    <p>Inserindo vídeos hospedados localmente</p>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video src="midia/Luísa Sonza, Baco Exu do Blues - Surreal (Áudio Oficial).mp4" width="500" controls></video>
+
+    <video controls width="500">
+        <source src="midia/Luísa Sonza, Baco Exu do Blues - Surreal (Áudio Oficial).mp4" type="video/mp4">
+    </video>
+
+    <p>Inserindo vídeos hospedados externamente</p>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=K9CjL34yNmz5alLf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
