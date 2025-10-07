@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required size="15" placeholder="Nome do Usuário"> 
+        </p>
+
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required placeholder="Senha">
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <!--Requerid utilizado para não deixar enviar com o campo de preenchimento vazio-->
+
+    <!--minlength (mínimo de caracteres) maxlength (máximo de caracteres), utilizar essas tags dentro de input para formulários que tenham que ter caracteres mínimos e máximos de preenchimento, exemplo : senhas e nome de usuários-->
+
+    <!--Para definir o tamanho da caixa de formulário, acrescentar a tag size dentro de input, o tamanho colocado dentro de size, é o quanto de letras que será mostrado por vez, nesse exercício foi utilizado o 15 -->
+
+    <!--placeholder, tag utilizada para dar dicas do que o usuário tem que fazer dentro de cada caixa do formulário, nesse exercício, por exemplo foi para o usuário colocar seu nome de usuário e senha-->
+
+    <!--para desligar o autocomplete, colocar a tag dentro de form e escolher a opção off, como no exemplo a cima-->
+</body>
+</html>
