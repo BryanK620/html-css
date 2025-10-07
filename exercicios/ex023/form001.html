@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" autocomplete="off" method="post">
         <p><label for="inome">Nome: </label>
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> 
@@ -16,5 +16,8 @@
     </form>
     <!--label é importante para fazer a relação do formulário.
     dentro do label colocar o id do input -->
+    <!--Por padrão todo formulário é GET, para modificar criar dentro de form uma tag method e colocar para POST para ocultar os dados da URL-->
+    <!--Utilizar GET quando os dados não forem sensíveis (senhas e etc)
+    O GET não suporta a cima de 3mil bytes e nem envio de fotos e etc  -->
 </body>
 </html>
